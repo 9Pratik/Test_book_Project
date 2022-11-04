@@ -1,0 +1,40 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px 20px 20px 20px ;
+    grid-gap: 40px;
+}
+.month{
+    grid-column: 1 / span 7;
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px 20px 20px 20px ;
+    grid-gap: 40px;
+    background-color: rgb(180, 168, 168);
+   width: 400px;
+   font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    
+}
+.calender_day{
+    grid-column-start: 3;
+    font-size: 15px;
+    font-weight: bold;
+}
+.Dec_cal{
+    background-color: rgb(184, 214, 214);
+    width: 500px;
+    height: 450px;
+    text-align: center;
+    padding-left: 15px;
+}
+
+.calender{
+    font-size: 15px;
+    font-weight: bold;
+}
+.calender:hover{
+    background-color: rgb(255, 238, 0);
+    cursor: pointer;
+    border-radius: 50%;
+    
+}

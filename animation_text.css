@@ -1,0 +1,114 @@
+
+.ani_text{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 250px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+ 
+}
+.first{
+    background-color: aqua;   
+    height: 200px;
+    width: 200px; 
+    padding: 10px;
+
+}
+.first > h1 .life{
+    color: white;
+    background-color: green;
+    animation-name: lifestyle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: alternate;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+.second{
+    background-color: rgb(224, 81, 15);
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+
+}
+.second > h1 .work{
+    color: white;
+    background-color: rgb(40, 240, 240);
+    animation-name: work;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: alternate;
+    animation-timing-function: ease-in-out;
+    position: relative;
+
+}
+.third{
+    background-color: rgb(240, 36, 230);
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+
+}
+.third h1 .every{
+    color: white;
+    background-color: red;
+    position: relative;
+    animation-name: everything;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: alternate;
+    animation-timing-function: ease-in-out;
+
+
+}
+
+@keyframes lifestyle{
+    0%{
+        top: 0;
+        bottom: 0;
+        color: orange;
+    }
+    25%{
+        top:100px
+    }
+    50%{
+        bottom: 60px;
+        background-color: rgb(255, 187, 0);
+        
+    }
+  
+}
+@keyframes work{
+    0%{
+        left: 0;
+        right: 0;
+        color: blueviolet;
+    }
+    25%{
+        left: 60px;
+    }
+    50%{
+        right: 60px;
+    }
+
+}
+
+@keyframes everything{
+    0%{
+        left: 0;
+        right: 0;
+        color: blueviolet;
+    }
+    25%{
+        left: 80px;
+        top: 100px;
+        color: darkmagenta;
+    }
+    50%{
+        right: 80px;
+        bottom: 70px;
+        color: orangered;
+    }
+
+}
